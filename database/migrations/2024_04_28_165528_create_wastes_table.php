@@ -18,8 +18,8 @@ return new class extends Migration
             $table->integer('year');
             $table->integer('month');
             $table->enum('waste_type', ['agriculture', 'food_waste', 'sewage', 'mixed']);
-            $table->integer('estimated_quantity');
-            $table->integer('actual_quantity');
+            $table->integer('estimated_quantity')->nullable();
+            $table->integer('actual_quantity')->nullable();
             $table->timestamps();
         });
     }
