@@ -49,6 +49,10 @@ Instructions to set up and run the project
 8. Open the web browser and go to [localhost](http://localhost) 
 
 
+### Initial Architecture Design sketch
+![img.png](img.png)
+
+
 ### Current Status
 
 Minimal features for functional display integrated:
@@ -79,3 +83,4 @@ Steps to follow to continue development:
 - Add unit tests for API quality assurance.
 - Add table for sites. (_Data abstractions into these tables was thought based on the assumptions that these data 
   might be part of a bigger dataset where customers and sites have more information to then than just their name._)
+
