@@ -29,3 +29,19 @@ range of skills where possible:
 
 Laravel (PHP) project with Vue.js frontend.
 
+### How to run
+
+**Requirements**
+- [Docker](https://www.docker.com)
+- [Composer](https://getcomposer.org) _(can be used through docker, see [dockerhub](https://hub.docker.com/_/composer/) for
+  **Basic usage** instructions)_
+- [NPM](https://www.npmjs.com)
+
+Instructions to set up and run the project 
+1. Clone the project.
+2. In the project root folder run `composer update`.
+3. In the project root folder run `npm install`.
+4. In the project root folder run `./vendor/bin/sail up` (or `./vendor/bin/sail up -d` for a headless process)
+5. In the project root folder run `./vendor/bin/sail artisan migrate`
+6. In the project root folder run `./vendor/bin/sail artisan db:seed`
+7. Open the web browser and go to [localhost](http://localhost) 
