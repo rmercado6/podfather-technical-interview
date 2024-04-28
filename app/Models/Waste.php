@@ -3,10 +3,11 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class Waste extends Model
 {
-
     protected $fillable = [
         'site',
         'year',
@@ -15,4 +16,9 @@ class Waste extends Model
         'estimated_quantity',
         'actual_quantity'
     ];
+
+    public function customer(): BelongsTo
+    {
+        return $this->belongsTo(Customer::class, 'customer_id');
+    }
 }
